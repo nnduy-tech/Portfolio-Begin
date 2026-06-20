@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/root.css" />
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <aside class="sidebar">
+        <div class="sidebar-logo">
+          <h2>Ngoc Duy</h2>
+        </div>
+        <ul class="sidebar-menu">
+          <li>
+            <a href="#" class="active"
+              ><i class="bx bxs-dashboard"></i> Bảng điều khiển</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-folder"></i> Quản lý dự án</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-code-alt"></i> Quản lý kỹ năng</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="bx bx-message-square-detail"></i> Khách hàng</a
+            >
+          </li>
+          <li>
+            <a href="index.html"><i class="bx bx-world"></i> Xem trang chủ</a>
+          </li>
+          <li>
+            <a href="login.html" class="logout"
+              ><i class="bx bx-log-out"></i> Đăng xuất</a
+            >
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div class="topbar-title">
+            <h3>Tổng quan hệ thống</h3>
+          </div>
+          <div class="user-info">
+            <span class="user-name">Admin Duy</span>
+            <div class="user-avatar">
+              <i class="bx bxs-user-circle"></i>
+            </div>
+          </div>
+        </header>
+
+        <section class="dashboard-cards">
+          <div class="card">
+            <div class="card-info">
+              <h3>3</h3>
+              <p>Dự Án Hoàn Thành</p>
+            </div>
+            <i class="bx bx-check-circle card-icon"></i>
+          </div>
+          <div class="card">
+            <div class="card-info">
+              <h3>10</h3>
+              <p>Kỹ Năng Lập Trình</p>
+            </div>
+            <i class="bx bx-code-block card-icon"></i>
+          </div>
+          <div class="card">
+            <div class="card-info">
+              <h3>0+</h3>
+              <p>Khách Hàng</p>
+            </div>
+            <i class="bx bx-laugh card-icon"></i>
+          </div>
+          <div class="card">
+            <div class="card-info">
+              <h3>0</h3>
+              <p>Tin Nhắn Mới</p>
+            </div>
+            <i class="bx bx-envelope card-icon"></i>
+          </div>
+        </section>
+
+        <section class="recent-projects">
+          <div class="section-header">
+            <h3>Danh sách dự án gần đây</h3>
+            <button class="add-btn">
+              <i class="bx bx-plus"></i> Thêm dự án
+            </button>
+          </div>
+          <div class="table-responsive">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tên Dự Án</th>
+                  <th>Danh Mục</th>
+                  <th>Trạng Thái</th>
+                  <th>Hành Động</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Todo List</td>
+                  <td>Web App</td>
+                  <td><span class="status completed">Hoàn thành</span></td>
+                  <td>
+                    <button class="action-btn edit">
+                      <i class="bx bx-edit"></i>
+                    </button>
+                    <button class="action-btn delete">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Spotify Clone</td>
+                  <td>Web Design</td>
+                  <td><span class="status completed">Hoàn thành</span></td>
+                  <td>
+                    <button class="action-btn edit">
+                      <i class="bx bx-edit"></i>
+                    </button>
+                    <button class="action-btn delete">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Thiết kế Web</td>
+                  <td>Landing Page</td>
+                  <td><span class="status pending">Đang làm</span></td>
+                  <td>
+                    <button class="action-btn edit">
+                      <i class="bx bx-edit"></i>
+                    </button>
+                    <button class="action-btn delete">
+                      <i class="bx bx-trash"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
